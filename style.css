@@ -45,3 +45,7 @@ label {
   margin-top: 15px;
   width: 100px;
 }
+
+.btn:disabled {
+  background: gray;
+}
