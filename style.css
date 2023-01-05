@@ -28,12 +28,14 @@ label {
   margin-left: 5px;
 }
 
-.question {
+.question,
+#submit {
   display: none;
 }
 
 .active {
   display: block;
+  height: 180px;
 }
 
 .btn {
@@ -48,4 +50,24 @@ label {
 
 .btn:disabled {
   background: gray;
+}
+
+#score-card-container {
+  color: rgb(84, 171, 222);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  flex-direction: column;
+}
+
+#score-card-container ul {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+#score-card-container p {
+  margin-top: 1rem;
 }
