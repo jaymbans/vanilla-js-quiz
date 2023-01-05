@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 25px;
+}
+
+h1,
+h3,
+.question h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+.answer {
+  background: rgb(223, 223, 223);
+  border: 1px solid white;
+  position: relative;
+  padding: 5px;
+}
+
+label {
+  margin-left: 5px;
+}
+
+.question {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.btn {
+  border: none;
+  background: rgba(54, 181, 54, 0.895);
+  color: white;
+  padding: 10px 0px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100px;
+}
