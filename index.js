@@ -1,18 +1,20 @@
-//store all the questions in an array and initiate the first question
+//Element Selections
 const questions = document.querySelectorAll('.question');
-
 const questionCounter = document.getElementById('question-ct');
-
 const nextButton = document.getElementById('next');
 const prevButton = document.getElementById('previous');
 const submitButton = document.getElementById('submit');
 const refreshButton = document.getElementById('refresh');
 
+
+// Initial dynamic variables on page load
 questionCounter.innerHTML = 1
 prevButton.setAttribute('disabled', true)
 
 
-// next question should 1) update the count 2) change the question displayed
+// functions
+
+// go to next question
 function nextQuestion(e) {
   e.preventDefault();
 
@@ -34,6 +36,8 @@ function nextQuestion(e) {
   }
 }
 
+
+// go to previous question
 function previousQuestion(e) {
   e.preventDefault();
   questions.forEach(question => {
@@ -54,6 +58,8 @@ function previousQuestion(e) {
   }
 }
 
+
+// submit the answers and retrieve score
 function submitAnswers(e) {
   e.preventDefault();
   const scoreCard = document.getElementById('score-card-container');
@@ -85,8 +91,8 @@ function refreshPage() {
   window.location.reload();
 }
 
-// attach click events to button
 
+// attach click events to button
 nextButton.addEventListener('click', nextQuestion)
 submitButton.addEventListener('click', submitAnswers)
 prevButton.addEventListener('click', previousQuestion)
